@@ -1,0 +1,127 @@
+ Project Title
+
+Expense Tracker System
+
+
+Project Description
+
+The Expense Tracker System is a menu-driven Python console application developed as part of the Python Mini Project assignment.
+The main objective of this project is to help users record, view, search, and save daily expense details in a simple and structured way.
+
+This project demonstrates the practical use of basic Python programming concepts such as lists, dictionaries, functions, loops, conditional statements, exception handling, and file handling.
+
+
+
+Objectives of the Project
+
+* To design a simple real-life application using Python
+* To store expense details efficiently using lists and dictionaries
+* To provide a user-friendly menu-based interface
+* To save expense records permanently using file handling
+
+
+ Features
+
+The Expense Tracker System provides the following features:
+
+* Add Expense
+  Allows the user to enter expense details such as date, category, and amount.
+
+* View Expenses
+  Displays all the expenses stored in the system in a clear and readable format.
+
+* Search Expense by Category
+  Enables the user to search and view expenses belonging to a particular category.
+
+* Save & Exit
+  Saves all expense records into a text file and exits the program safely.
+
+
+Concepts Used
+
+This project is developed strictly using the concepts taught in class:
+
+* Lists – To store multiple expense records
+* Dictionaries – To store individual expense details
+* Functions– To modularize the code and improve readability
+* Conditional Statements (`if`, `elif`, `else`) – To handle menu choices
+* Loops (`while`) – To repeatedly display the menu
+* String Methods (`strip()`, `upper()`) – To clean and standardize user input
+* Exception Handling (`try` / `except`) – To handle invalid numeric input
+* File Handling (`open()` / `with open()`) – To save expense data permanently
+
+---
+
+Data Storage Design
+
+The project uses a **list of dictionaries** for storing expense data.
+
+* The list stores multiple expense records
+* Each dictionary represents one expense record
+
+Example:
+
+
+{"Date": "20-01-2026", "Category": "ENTERTAINMENT", "Amount": 420}
+
+
+This structure allows easy addition, searching, and display of expenses.
+
+
+ File Handling
+
+* Expense records are saved in a file named expenses.txt
+* The file is created automatically when the user selects Save & Exit
+* Each expense record is written on a new line in the file
+
+This ensures that the data is not lost after the program ends.
+
+---
+
+ How to Run the Program
+
+Follow the steps below to execute the program:
+
+1. Install Python on your system
+2. Save the program file as:
+
+  
+   expense_tracker.py
+  
+3. Open Command Prompt / Terminal
+4. Navigate to the folder containing the file
+5. Run the program using:
+
+   ```
+   python expense_tracker.py
+   ```
+
+---
+
+Menu Options
+
+The program displays the following menu options:
+
+1. Add Expense
+2. View Expenses
+3. Search Expense by Category
+4. Save & Exit
+
+The menu continues to appear until the user chooses the exit option.
+
+---
+
+ Input Guidelines
+
+* Date should be entered in DD-MM-YYYY format
+* Category should be entered as text (e.g., FOOD, TRAVEL, ENTERTAINMENT)
+* Amount should be entered as a numeric value
+
+Invalid inputs are handled using exception handling.
+
+
+ Output
+
+* Expense details are displayed on the console
+* Saved expense records can be viewed in the `expenses.txt` file
+
